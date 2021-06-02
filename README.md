@@ -24,8 +24,7 @@ $ php artisan jwt:secret
 ```
 $ php artisan migrate
 $ php artisan tinker
-$ factory(App\User::class, 10)->create()
-$ factory(App\Task::class, 50)->create()
+$ factory(App\Models\User::class, 10)->create()
 ```
 To test application follow the tutorial bellow.
 Click on the image bellow to see YouTube video.

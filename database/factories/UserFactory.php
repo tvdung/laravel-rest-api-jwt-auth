@@ -2,8 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\User;
-use App\Task;
+use App\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -28,10 +27,3 @@ $factory->define(User::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(Task::class, function (Faker $faker) {
-    return [
-        'title' => $faker->sentence,
-        'details' => $faker->sentence,
-        'created_by' => rand(1, 10)
-    ];
-});
